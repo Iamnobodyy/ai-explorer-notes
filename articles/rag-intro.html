@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RAG 是什麼？讓 AI 先查資料再回答 | AI 探索筆記站</title>
+<meta name="description" content="介紹檢索增強生成（RAG）的文件檢索與回答流程。">
+<link rel="stylesheet" href="../assets/css/style.css"></head>
+<body data-root="../" data-page="article" data-cat="concepts">
+<a class="skip" href="#main">跳到主要內容</a><header id="site-header"></header>
+<main id="main"><div class="wrap"><article class="post">
+<a class="tag" href="../index.html?cat=concepts#articles">技術觀念</a>
+<h1>RAG 是什麼？讓 AI 先查資料再回答</h1><p class="meta">更新日期：<time datetime="2026-11-10">2026-11-10</time>　閱讀時間：約 1–3 分鐘</p>
+<p class="summary"><strong>摘要：</strong>RAG 把外部文件檢索結果交給模型參考，能補充專屬資料，但不保證答案一定正確。</p>
+<h2>前言與學習目標</h2>
+<p>介紹檢索增強生成（RAG）的文件檢索與回答流程。</p><ul class="goals">
+<li>理解檢索與生成兩階段。</li>
+<li>認識切塊、向量搜尋與引用。</li>
+<li>了解資料品質的重要性。</li>
+</ul>
+<h2>一、為什麼需要 RAG</h2>
+<p>模型可能沒有最新資訊或特定組織內部資料。RAG 先從指定資料庫找出相關內容，再把檢索結果提供給模型作答。</p>
+<h2>二、基本流程</h2>
+<p>整理文件；切成較小段落；建立 embedding 索引；使用者提問時檢索相關段落；把問題與內容交給模型生成回答。</p>
+<h2>三、好處與限制</h2>
+<p>RAG 可使用特定文件、更新知識來源並附上參考段落；但切塊不佳、來源過時或檢索錯誤都可能導致錯誤答案。</p>
+<h2>四、如何評估</h2>
+<p>檢查檢索是否找對文件、答案是否忠於文件、引用是否支持結論，以及找不到資料時是否能坦白說明。</p>
+<h2>重點整理</h2><ul>
+<li>理解檢索與生成兩階段。</li>
+<li>認識切塊、向量搜尋與引用。</li>
+<li>了解資料品質的重要性。</li>
+</ul>
+<p class="meta">本文為繁體中文原創整理，非逐字轉載。外部參考頁面可能更新，查核日期：2026-11-10。</p>
+<h2>參考資料</h2><ul>
+<li><a href="https://www-cdn.anthropic.com/4286688a2f9d88c74d98f740778a9fc81fb18ba7.pdf" target="_blank" rel="noopener noreferrer">Anthropic：AI 技術概念（含 RAG）</a>（外部參考）</li>
+<li><a href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener noreferrer">Google：Machine Learning Crash Course</a>（外部參考）</li>
+</ul></article></div></main><footer id="site-footer"></footer>
+<script src="../assets/js/main.js"></script></body></html>

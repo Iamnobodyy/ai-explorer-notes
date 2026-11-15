@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stable Diffusion 入門 | AI 探索筆記站</title>
+<meta name="description" content="認識 Stable Diffusion 的基本原理、使用方式與初學者須注意的硬體、授權與安全事項。">
+<link rel="stylesheet" href="../assets/css/style.css"></head>
+<body data-root="../" data-page="article" data-cat="tools">
+<a class="skip" href="#main">跳到主要內容</a>
+<header id="site-header"></header>
+<main id="main"><div class="wrap">
+<article class="post">
+<a class="tag" href="../index.html?cat=tools#articles">AI 工具</a>
+<h1>Stable Diffusion 入門：認識開放權重的圖像生成模型</h1>
+<p class="meta">更新日期：<time datetime="2026-11-13">2026-11-13</time>　閱讀時間：約 7 分鐘</p>
+<p class="summary"><strong>摘要：</strong>了解 Stable Diffusion 的基本原理、常見使用方式，以及初學者該注意的硬體、授權與安全事項。</p>
+
+<h2>前言與學習目標</h2>
+<p>Stable Diffusion 是由 Stability AI 等團隊推廣的文字生圖（text-to-image）模型系列，屬於擴散模型（diffusion model）。許多版本公開了模型權重，因此可以在自己的電腦或雲端環境執行。</p>
+<ul class="goals">
+<li>用白話理解「擴散」是怎麼生成圖片的。</li>
+<li>知道常見的使用方式與各自的取捨。</li>
+<li>了解授權、硬體與內容安全的基本注意事項。</li>
+</ul>
+
+<h2>基本原理（簡化版）</h2>
+<p>訓練時，模型學習如何把一張逐步加上雜訊的圖片「還原」。生成時則反過來：從一片隨機雜訊開始，依照你的文字描述，一步步去除雜訊，最後得到圖片。你的 Prompt 會被轉成數值表示，用來引導每一步的去噪方向。</p>
+<p class="note">以上為概念簡化，不同版本的架構細節並不相同，深入內容請參考各版本的官方技術文件。</p>
+
+<h2>常見的使用方式</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>方式</th><th>優點</th><th>取捨</th></tr></thead>
+<tbody>
+<tr><td>本機執行</td><td>資料留在自己電腦、可自訂程度高</td><td>需要相容的顯示卡與較多設定</td></tr>
+<tr><td>雲端筆記本或租用 GPU</td><td>不需自備高階硬體</td><td>可能產生費用，且須留意平台規則</td></tr>
+<tr><td>線上服務</td><td>最容易上手</td><td>功能與條件由業者決定，可能收費</td></tr>
+</tbody></table></div>
+<p>實際可用的介面與工具會持續變動，請以各專案的官方頁面為準（本文查核日期：2026-11-13）。</p>
+
+<h2>第一次嘗試的建議流程</h2>
+<ol>
+<li><strong>選擇執行方式：</strong>初學者建議先從線上服務或雲端環境開始。預期結果：不用先處理安裝問題。</li>
+<li><strong>寫下清楚的描述：</strong>包含主體、場景、風格與光線，例如：
+<pre><code class="language-text">一隻戴著圍巾的柴犬坐在咖啡店窗邊，水彩風格，柔和的午後光線</code></pre></li>
+<li><strong>先用預設設定生成：</strong>先觀察結果，不急著調整所有參數。預期結果：得到數張風格大致相符的圖片。</li>
+<li><strong>每次只改一個地方：</strong>例如只調整描述或只更換隨機種子（seed），才能判斷是哪個改動造成差異。</li>
+<li><strong>保存提示詞與設定：</strong>方便日後重現與整理成學習筆記。</li>
+</ol>
+
+<h2>注意事項與常見問題</h2>
+<h3>需要什麼硬體？</h3>
+<p>需求依模型版本與解析度而異，通常與顯示卡的 VRAM 容量關係最大。請查閱你要使用的版本之官方說明，本站不提供未經查證的規格數字。</p>
+<h3>生成的圖片可以商用嗎？</h3>
+<p class="note">不同模型版本的授權條款不同，且可能有使用限制。商用前請閱讀該版本的官方授權，必要時諮詢專業人士。</p>
+<h3>有哪些風險要留意？</h3>
+<ul>
+<li>避免生成或散布侵害他人肖像、著作或隱私的內容。</li>
+<li>從網路下載的模型檔來源要可靠，避免來路不明的檔案。</li>
+<li>生成結果可能含有偏見或不準確的細節，請自行檢查。</li>
+</ul>
+
+<h2>重點整理</h2>
+<ul>
+<li>Stable Diffusion 從雜訊開始，依文字引導逐步生成圖片。</li>
+<li>初學者可先用線上或雲端方式，再考慮本機安裝。</li>
+<li>使用前務必確認授權、硬體需求與內容安全。</li>
+</ul>
+
+<h2>參考資料</h2>
+<p>本文為概念介紹，未引用特定數據。建議查閱 Stability AI 與各模型發布頁面的官方文件，以取得最新的版本、授權與系統需求。</p>
+</article></div></main>
+<footer id="site-footer"></footer>
+<script src="../assets/js/main.js"></script>
+</body></html>

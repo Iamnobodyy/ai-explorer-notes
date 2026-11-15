@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>大型語言模型（LLM）如何產生文字？ | AI 探索筆記站</title>
+<meta name="description" content="以白話介紹 token、上下文與下一個 token 預測。">
+<link rel="stylesheet" href="../assets/css/style.css"></head>
+<body data-root="../" data-page="article" data-cat="concepts">
+<a class="skip" href="#main">跳到主要內容</a><header id="site-header"></header>
+<main id="main"><div class="wrap"><article class="post">
+<a class="tag" href="../index.html?cat=concepts#articles">技術觀念</a>
+<h1>大型語言模型（LLM）如何產生文字？</h1><p class="meta">更新日期：<time datetime="2026-11-10">2026-11-10</time>　閱讀時間：約 1–3 分鐘</p>
+<p class="summary"><strong>摘要：</strong>LLM 透過大量資料學習語言模式，依上下文預測 token；流暢回答不代表每個細節都正確。</p>
+<h2>前言與學習目標</h2>
+<p>以白話介紹 token、上下文與下一個 token 預測。</p><ul class="goals">
+<li>理解 token 與下一個 token 預測。</li>
+<li>知道訓練與生成的差異。</li>
+<li>認識模型能力邊界。</li>
+</ul>
+<h2>一、從文字到 Token</h2>
+<p>模型通常不直接把整句文字當成單位，而會先切成 token。Token 可能是字、詞的一部分或符號，再轉成數值供模型運算。</p>
+<h2>二、模型如何生成</h2>
+<p>模型讀取上下文，計算下一個 token 的機率，再依解碼策略選出 token。新 token 加回上下文後，重複此過程直到停止。</p>
+<h2>三、為什麼會有幻覺</h2>
+<p>模型產生的是符合上下文的文字，不等於每句話都經外部資料庫驗證。缺乏資料或問題含糊時，可能生成看似合理但錯誤的細節。</p>
+<h2>四、使用建議</h2>
+<p>提供背景與來源；要求區分事實、推論與不確定處；重要資訊回到原始來源核對。</p>
+<h2>重點整理</h2><ul>
+<li>理解 token 與下一個 token 預測。</li>
+<li>知道訓練與生成的差異。</li>
+<li>認識模型能力邊界。</li>
+</ul>
+<p class="meta">本文為繁體中文原創整理，非逐字轉載。外部參考頁面可能更新，查核日期：2026-11-10。</p>
+<h2>參考資料</h2><ul>
+<li><a href="https://developers.google.com/machine-learning/crash-course/llm/transformers" target="_blank" rel="noopener noreferrer">Google：大型語言模型與 Transformer</a>（外部參考）</li>
+<li><a href="https://learn.microsoft.com/training/modules/fundamentals-generative-ai/" target="_blank" rel="noopener noreferrer">Microsoft Learn：生成式 AI 與 Agent 入門</a>（外部參考）</li>
+</ul></article></div></main><footer id="site-footer"></footer>
+<script src="../assets/js/main.js"></script></body></html>

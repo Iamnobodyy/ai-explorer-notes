@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hugging Face Diffusers：擴散模型工具箱 | AI 探索筆記站</title>
+<meta name="description" content="介紹 Hugging Face Diffusers 函式庫，以及使用擴散模型時的基本概念。">
+<link rel="stylesheet" href="../assets/css/style.css"></head>
+<body data-root="../" data-page="article" data-cat="tools">
+<a class="skip" href="#main">跳到主要內容</a><header id="site-header"></header>
+<main id="main"><div class="wrap"><article class="post">
+<a class="tag" href="../index.html?cat=tools#articles">AI 工具</a>
+<h1>Hugging Face Diffusers：擴散模型工具箱</h1><p class="meta">更新日期：<time datetime="2026-11-9">2026-11-9</time>　閱讀時間：約 1–3 分鐘</p>
+<p class="summary"><strong>摘要：</strong>Diffusers 是用於擴散模型的開源函式庫，不是單一生圖網站；需留意模型、環境與授權。</p>
+<h2>前言與學習目標</h2>
+<p>介紹 Hugging Face Diffusers 函式庫，以及使用擴散模型時的基本概念。</p><ul class="goals">
+<li>分辨模型、函式庫與介面。</li>
+<li>認識文字生圖 pipeline。</li>
+<li>確認硬體與模型授權。</li>
+</ul>
+<h2>一、Diffusers 是什麼</h2>
+<p>Diffusers 是 Python 函式庫，協助載入不同擴散模型並執行生成流程。它提供 pipeline，也允許進階使用者替換排程器或模型元件。</p>
+<h2>二、典型流程</h2>
+<p>選模型並閱讀模型卡；準備 Python 與運算設備；載入文字生圖 pipeline；提供提示詞與參數；檢查輸出並保存版本設定。</p>
+<h2>三、概念示意</h2>
+<p>文字提示詞 → 文字編碼 → 擴散模型逐步去噪 → VAE 解碼 → 輸出圖片。不同模型架構可能不同，這只是簡化示意。</p>
+<h2>四、容易忽略的事</h2>
+<p>VRAM 需求會隨模型與解析度改變；模型來源與授權要確認；範例程式可能隨函式庫版本更新。</p>
+<h2>重點整理</h2><ul>
+<li>分辨模型、函式庫與介面。</li>
+<li>認識文字生圖 pipeline。</li>
+<li>確認硬體與模型授權。</li>
+</ul>
+<p class="meta">本文為繁體中文原創整理，非逐字轉載。外部參考頁面可能更新，查核日期：2026-11-9。</p>
+<h2>參考資料</h2><ul>
+<li><a href="https://huggingface.co/docs/diffusers/index" target="_blank" rel="noopener noreferrer">Hugging Face Diffusers 文件</a>（外部參考）</li>
+<li><a href="https://stability.ai/" target="_blank" rel="noopener noreferrer">Stability AI</a>（外部參考）</li>
+</ul></article></div></main><footer id="site-footer"></footer>
+<script src="../assets/js/main.js"></script></body></html>

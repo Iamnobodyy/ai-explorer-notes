@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prompt 基礎：怎麼把問題問清楚 | AI 探索筆記站</title>
+<meta name="description" content="用角色、任務、背景、格式、限制五個要素，寫出更穩定的提示詞。">
+<link rel="stylesheet" href="../assets/css/style.css"></head>
+<body data-root="../" data-page="article" data-cat="concepts">
+<a class="skip" href="#main">跳到主要內容</a>
+<header id="site-header"></header>
+<main id="main"><div class="wrap">
+<article class="post">
+<a class="tag" href="../index.html?cat=concepts#articles">技術觀念</a>
+<h1>Prompt 基礎：怎麼把問題問清楚</h1>
+<p class="meta">更新日期：<time datetime="2026-11-13">2026-11-13</time>　閱讀時間：約 5 分鐘</p>
+<p class="summary"><strong>摘要：</strong>用「角色、任務、背景、格式、限制」五個要素，寫出更穩定、可重複使用的提示詞。</p>
+
+<h2>前言與學習目標</h2>
+<p>Prompt（提示詞）是你交給大型語言模型（LLM, Large Language Model）的指令與資訊。模型能做的事很多，但它無法讀心，問題越清楚，答案通常越接近你要的結果。</p>
+<ul class="goals">
+<li>理解 Prompt 的基本組成。</li>
+<li>能用五個要素改寫模糊的提問。</li>
+<li>知道如何根據回答逐步調整。</li>
+</ul>
+
+<h2>Prompt 的五個要素</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>要素</th><th>說明</th><th>範例</th></tr></thead>
+<tbody>
+<tr><td>角色</td><td>希望模型以什麼身分回答</td><td>你是一位資深的國中數學老師</td></tr>
+<tr><td>任務</td><td>要完成的事，動詞要具體</td><td>幫我設計三題一元一次方程式練習</td></tr>
+<tr><td>背景</td><td>對象、目的、已知資訊</td><td>學生剛學完移項，容易算錯正負號</td></tr>
+<tr><td>格式</td><td>輸出的結構與長度</td><td>用表格呈現，附簡短解答</td></tr>
+<tr><td>限制</td><td>不要做什麼、字數、語氣</td><td>不要使用分數，用語淺白</td></tr>
+</tbody></table></div>
+<p>不一定每次都需要五項齊全。任務與背景通常最重要，其餘依需求加入。</p>
+
+<h2>實作：把模糊提問改寫清楚</h2>
+<h3>步驟 1：寫下原本的問法</h3>
+<pre><code class="language-text">幫我寫一份學習計畫</code></pre>
+<p>預期結果：模型會給出很通用的計畫，因為它不知道你的程度與時間。</p>
+<h3>步驟 2：補上背景與目標</h3>
+<pre><code class="language-text">我是完全沒有程式經驗的上班族，每週可學習 5 小時，
+希望 8 週後能用 Python 整理 Excel 資料。</code></pre>
+<h3>步驟 3：指定格式與限制</h3>
+<pre><code class="language-text">請以表格列出每週的主題、練習內容與預估時間。
+每週練習不超過 3 項，用語避免艱深術語。</code></pre>
+<h3>步驟 4：檢視回答並追問</h3>
+<p>若第 3 週太難，可直接回覆「請把第 3 週拆成兩週，並加入一個簡單範例」。多輪調整往往比一次寫出完美 Prompt 更有效率。預期結果：內容逐步貼近你的程度。</p>
+
+<h2>注意事項與常見問題</h2>
+<h3>模型回答錯了怎麼辦？</h3>
+<p>模型可能產生看似合理但不正確的內容。涉及事實、數字、法規或醫療時，請對照可靠來源查證。</p>
+<h3>可以把個人資料放進 Prompt 嗎？</h3>
+<p class="note">請避免輸入密碼、金鑰、身分證字號或他人隱私資料。實際的資料處理方式請參考所使用服務的官方說明。</p>
+<h3>Prompt 越長越好嗎？</h3>
+<p>不一定。重點是資訊相關且清楚，重複或互相矛盾的敘述反而會讓結果不穩定。</p>
+
+<h2>重點整理</h2>
+<ul>
+<li>用角色、任務、背景、格式、限制檢查你的提問。</li>
+<li>先寫出可用的版本，再依回答逐步調整。</li>
+<li>重要內容務必自行查證，並保護個人資料。</li>
+</ul>
+<p class="meta">本文為概念性整理，未引用特定外部研究或數據。</p>
+</article></div></main>
+<footer id="site-footer"></footer>
+<script src="../assets/js/main.js"></script>
+</body></html>
